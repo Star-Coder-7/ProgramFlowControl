@@ -11,7 +11,7 @@ while low != high:
     high_low = input(f"""My guess is {guess}. Should I guess higher or lower?
     Please enter l for lower and h for higher, or c if my guess was correct:""").lower()
 
-    if high_low == "quit" or high_low == "stop":
+    if high_low == "quit" or high_low == "stop" or high_low == 0:
         print("Ok, maybe next time we can play.")
         break
     elif high_low == "h" or high_low == "higher":
