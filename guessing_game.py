@@ -1,10 +1,11 @@
 import random
+import time
 
-highest = 10
+highest = int(input("What do you want the highest number to be?\n Type it here: "))
 answer = random.randint(1, highest)
 
 print("If you want to quit the game, please press 0.")
-print("I have guessed a number, from the range 1-10, now you got to guess what it is!")
+print(f"I have a number, from the range 1-{highest}, now you got to guess what it is!")
 print(f"Please guess a number from 1-{highest}: ")
 
 guess = int(input("Your guess: "))
@@ -24,6 +25,8 @@ while guess != answer:
         guess = int(input("Your guess: "))
 
 print(f"Well Done, my number was indeed {answer}")
+time.sleep(3)
+print("It was a pleasure to play with you.")
 
 
 
