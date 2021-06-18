@@ -6,7 +6,6 @@ answer = random.randint(1, highest)
 print("If you want to quit the game, please press 0.")
 print("I have guessed a number, from the range 1-10, now you got to guess what it is!")
 print(f"Please guess a number from 1-{highest}: ")
-print(answer)   # Just for testing
 
 guess = int(input("Your guess: "))
 
@@ -23,6 +22,7 @@ while guess != answer:
     elif guess > answer:
         print("Please guess lower")
         guess = int(input("Your guess: "))
+
 print(f"Well Done, my number was indeed {answer}")
 
 
